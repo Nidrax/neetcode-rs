@@ -27,13 +27,13 @@ mod tests {
         let t2 = String::from("jam");
         let s3 = String::from("anagram");
         let t3 = String::from("nagarram");
-        let s4 = String::from("anagram");
-        let t4 = String::from("nagaram");
+        let s4 = String::from("sadder");
+        let t4 = String::from("dears");
 
         assert_eq!(valid_anagram::is_anagram(s1, t1), true);
         assert_eq!(valid_anagram::is_anagram(s2, t2), false);
         assert_eq!(valid_anagram::is_anagram(s3, t3), false);
-        assert_eq!(valid_anagram::is_anagram(s4, t4), true);
+        assert_eq!(valid_anagram::is_anagram(s4, t4), false);
     }
 }
 
