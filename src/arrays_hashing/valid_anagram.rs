@@ -16,6 +16,7 @@ use std::collections::HashMap;
 /// <constraints>
 /// s and t consist of lowercase English letters.
 /// </constraints>
+#[allow(dead_code)]
 pub fn is_anagram(s: String, t: String) -> bool
 {
     if s.len() != t.len() { return false; }

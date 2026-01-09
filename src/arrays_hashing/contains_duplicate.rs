@@ -12,6 +12,7 @@ use std::collections::HashMap;
 /// Input: nums = [1, 2, 3, 4]
 /// Output: false
 /// </example>
+#[allow(dead_code)]
 pub fn has_duplicate(nums: &[i32]) -> bool
 {
     let mut hashes = HashMap::new();
