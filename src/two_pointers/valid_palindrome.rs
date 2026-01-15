@@ -13,8 +13,8 @@
 /// Output: false
 /// </example>
 /// <constraints>
-///    - 1 <= s.length <= 1000
-///    - s is made up of only printable ASCII characters.
+///    -- 1 <= s.length <= 1000
+///    -- s is made up of only printable ASCII characters.
 /// </constraints>
 #[allow(dead_code)]
 pub fn is_palindrome(s: String) -> bool
@@ -37,7 +37,7 @@ pub fn is_palindrome(s: String) -> bool
         if l >= r { break; }
 
         //compare left and right pointer until they cross
-        if bytes[l].to_ascii_lowercase() != bytes[r].to_ascii_lowercase() {
+        if !bytes[l].eq_ignore_ascii_case(&bytes[r]) {
             return false;
         }
 
